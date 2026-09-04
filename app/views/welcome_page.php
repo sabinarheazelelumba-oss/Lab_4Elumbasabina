@@ -14,18 +14,18 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
         :root {
-            --lava: #dd4814;
-            --lava-dim: #b83a10;
-            --lava-glow: rgba(221,72,20,0.15);
-            --lava-glow-strong: rgba(221,72,20,0.25);
-            --bg: #0a0a0b;
-            --bg2: #111113;
-            --bg3: #18181b;
-            --border: rgba(255,255,255,0.07);
-            --border-hot: rgba(221,72,20,0.35);
-            --text: #f4f4f5;
-            --text-muted: #71717a;
-            --text-dim: #3f3f46;
+            --lava: #8b5cf6;
+            --lava-dim: #7c3aed;
+            --lava-glow: rgba(139,92,246,0.15);
+            --lava-glow-strong: rgba(139,92,246,0.35);
+            --bg: #0f0f1e;
+            --bg2: #16152a;
+            --bg3: #1e1d3f;
+            --border: rgba(255,255,255,0.08);
+            --border-hot: rgba(139,92,246,0.35);
+            --text: #f8f8f8;
+            --text-muted: #9ca3af;
+            --text-dim: #4b5563;
             --mono: 'JetBrains Mono', monospace;
             --sans: 'Unbounded', sans-serif;
         }
@@ -76,12 +76,12 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
         .orb-1 {
             width: 600px; height: 600px;
             top: -200px; left: -100px;
-            background: radial-gradient(circle, rgba(221,72,20,0.12) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(139,92,246,0.12) 0%, transparent 70%);
         }
         .orb-2 {
             width: 400px; height: 400px;
             top: 200px; right: -100px;
-            background: radial-gradient(circle, rgba(221,72,20,0.07) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(139,92,246,0.07) 0%, transparent 70%);
         }
 
         /* ── LAYOUT ── */
@@ -103,7 +103,7 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
             padding: 1.5rem 2rem;
             border-bottom: 1px solid var(--border);
             backdrop-filter: blur(12px);
-            background: rgba(10,10,11,0.6);
+            background: rgba(15,15,30,0.6);
             max-width: 100%;
         }
 
@@ -173,9 +173,9 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            background: rgba(221,72,20,0.1);
+            background: rgba(139,92,246,0.1);
             border: 1px solid var(--border-hot);
-            color: #f97316;
+            color: #c4b5fd;
             font-size: 0.75rem;
             font-weight: 600;
             letter-spacing: 0.08em;
@@ -371,7 +371,7 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
 
         .feature-icon {
             width: 40px; height: 40px;
-            background: rgba(221,72,20,0.1);
+            background: rgba(139,92,246,0.1);
             border: 1px solid var(--border-hot);
             border-radius: 10px;
             display: flex;
@@ -471,7 +471,7 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
         .dir-item:hover {
             border-color: var(--border-hot);
             color: var(--text);
-            background: rgba(221,72,20,0.05);
+            background: rgba(139,92,246,0.05);
         }
 
         .dir-item .dir-icon { color: var(--lava); font-size: 0.9rem; }
@@ -577,7 +577,7 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
         <span class="word-lava">Lava</span><span class="word-lust">Lust</span><br>Framework
     </h1>
     <p class="hero-sub">
-        A lightweight, expressive PHP MVC framework built for developers who want structure without the bloat.
+        A lightweight, expressive PHP MVC framework built for developers who want structure without the bloat. Perfect for building modern web applications with clean architecture, powerful routing, and developer-friendly tools.
     </p>
     <div class="hero-actions">
         <a href="https://lavalust.netlify.app/docs/" target="_blank" class="btn btn-primary">
@@ -616,7 +616,7 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
     <div class="wrap">
         <div class="section-label">// features</div>
         <h2 class="section-title">Everything you need.<br>Nothing you don't.</h2>
-        <p class="section-desc">LavaLust gives you a clean, consistent structure so you can focus on building — not configuring.</p>
+        <p class="section-desc">LavaLust gives you a clean, consistent structure so you can focus on building — not configuring. From routing to database management, every feature is designed to accelerate your development workflow.</p>
 
         <div class="features-layout">
             <div class="feature">
@@ -662,7 +662,7 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
             <div>
                 <div class="section-label">// quick start</div>
                 <h2 class="section-title">Up and running in minutes.</h2>
-                <p class="section-desc">Define a route, write a controller method, render a view. That's the whole loop.</p>
+                <p class="section-desc">Define a route, write a controller method, render a view. That's the whole loop. LavaLust's simple and intuitive syntax makes it easy for both beginners and experienced developers to create powerful applications quickly.</p>
             </div>
 
             <div>
@@ -709,7 +709,7 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
     <div class="wrap">
         <div class="section-label">// project structure</div>
         <h2 class="section-title">Organized by default.</h2>
-        <p class="section-desc">A predictable directory layout so every file has a logical home from day one.</p>
+        <p class="section-desc">A predictable directory layout so every file has a logical home from day one. This organization reduces cognitive load and makes your codebase more maintainable as your project grows.</p>
 
         <div class="structure-grid">
             <?php
